@@ -1,0 +1,22 @@
+RC circuit transient analysis
+*tau =1m
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+r 1 2 10k
+c 2 0 0.1u
+*v 1 0 pwl(0 0 10m 0 10.9999m 0 11m 5 20m 5 20.00001m 0)
+v 1 0 dc 0 ac 1 $ac analysis
+*analysis command
+.ac dec 10 1 10k 
+
+.control 
+run
+
+*display cmd
+plot v(1) v(2)
+*end control mode
+.endc 
+
+*end netlist
+.end

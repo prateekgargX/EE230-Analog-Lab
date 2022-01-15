@@ -14,7 +14,7 @@ run
 
 *display cmd
 plot vdb(3)
-*print vdb(3)
+print vdb(3)
 *end control mode
 .endc 
 

@@ -1,24 +1,24 @@
-RC Integrator circuit transient analysis
+RC DIfferentiator circuit transient analysis
 *tau =1m #Time Period
 
 *describe circuit
 * <element-name> <nodes> <value/nodel>
-r 1 2 10k
-c 2 0 0.1u
-*v 1 0 pulse(0 5 0 0 0 10m 20m) $10*tau
+r 2 0 10k
+c 1 2 0.1u
+v 1 0 pulse(0 5 0 0 0 10m 20m) $10*tau
 *v 1 0 pulse(0 5 0 0 0 10m 20m) $5*tau
 *v 1 0 pulse(0 5 0 0 0 10m 20m) $1*tau
 *v 1 0 pulse(0 5 0 0 0 10m 20m) $0.5*tau
 *v 1 0 pulse(0 5 0 0 0 10m 20m) $0.1*tau
-v 1 0 pulse(0 5 0 0 0 0.05m 0.1m) $0.05*tau
+*v 1 0 pulse(0 5 0 0 0 10m 20m) $0.05*tau
 *analysis command
-.tran 0.011m 10m 
+.tran 0.001m 5m 
 
 .control 
 run
 
 *display cmd
-plot v(1) v(2)
+plot v(2) v(1)
 print v(1) v(2) 
 *end control mode
 .endc 

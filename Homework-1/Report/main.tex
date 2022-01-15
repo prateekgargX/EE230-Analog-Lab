@@ -11,16 +11,17 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+
 \lstdefinelanguage{SPICE}{
-  keywords={.dc, .meas},
+  keywords={tran,ac,dc, meas,plot,print,control,run,end,endc},
   morecomment=[l]{*},
-  morecomment=[l]{\$}
+  morecomment=[l]{\$},
   morecomment=[s]{/*}{*/},
   morestring=[b]',
   morestring=[b]",
-  ndkeywords={.tran, .ac, boolean, throw, implements, import, this},
+  ndkeywords={r,l,c,v,vdb},
   keywordstyle=\color{blue}\bfseries,
-  ndkeywordstyle=\color{darkgray}\bfseries,
+  ndkeywordstyle=\color{codegreen}\bfseries,
   identifierstyle=\color{black},
   commentstyle=\color{purple}\ttfamily,
   stringstyle=\color{red}\ttfamily,
@@ -47,6 +48,7 @@
 }
 
 \lstset{style=mystyle}
+
 
 % Title[Enter title of the experiment here]
 \title{EE230: Homework-1\\
@@ -83,6 +85,12 @@ We start by creating a netlist for each circuit, simulating on Ngspice and expor
 %Add circuit Diagrams here
 %With accompaying Explanantions 
 \input{RC_Integrator.tex}
+\input{RC_Differentiator.tex}
+\input{RC_lowpass_Filter.tex}
+\input{RC_Highpass_Filter.tex}
+\input{RC_Bandpass_Filter.tex}
+\input{RLC_Bandpass_Filter.tex}
+
 \section{Simulation results}
 
 \subsection{RC Integrator}
@@ -98,7 +106,7 @@ We start by creating a netlist for each circuit, simulating on Ngspice and expor
 
 \subsection{RC Differentiator}
 \subsubsection{Code snippet}
-\lstinputlisting{../RC_Differentiator.cir}
+\lstinputlisting[language=SPICE]{../RC_Differentiator.cir}
 \subsubsection{Simulation results}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RC_Differentiator_1.png}}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RC_Differentiator_2.png}}
@@ -109,25 +117,25 @@ We start by creating a netlist for each circuit, simulating on Ngspice and expor
 
 \subsection{RC Lowpass Filter}
 \subsubsection{Code snippet}
-\lstinputlisting{../RC_Lowpass_Filter.cir}
+\lstinputlisting[language=SPICE]{../RC_Lowpass_Filter.cir}
 \subsubsection{Simulation results}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RC_Lowpass_Filter.png}}
 
 \subsection{RC Highpass Filter}
 \subsubsection{Code snippet}
-\lstinputlisting{../RC_Highpass_Filter.cir}
+\lstinputlisting[language=SPICE]{../RC_Highpass_Filter.cir}
 \subsubsection{Simulation results}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RC_Highpass_Filter.png}}
 
 \subsection{RC Bandpass Filter}
 \subsubsection{Code snippet}
-\lstinputlisting{../RC_Bandpass_Filter.cir}
+\lstinputlisting[language=SPICE]{../RC_Bandpass_Filter.cir}
 \subsubsection{Simulation results}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RC_Bandpass_Filter.png}}
 
 \subsection{RLC Bandpass Filter}
 \subsubsection{Code snippet}
-\lstinputlisting{../RLC_Bandpass_Filter.cir}
+\lstinputlisting[language=SPICE]{../RLC_Bandpass_Filter.cir}
 \subsubsection{Simulation results}
 \makebox[\textwidth]{\includegraphics[width=\paperwidth]{RLC_Bandpass_FiIter.png}}
 

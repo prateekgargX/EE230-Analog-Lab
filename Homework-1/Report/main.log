@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  15 JAN 2022 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  15 JAN 2022 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,20 +446,20 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count275
@@ -486,9 +486,9 @@ e
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 62.
+(Font)              <14.4> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 62.
+(Font)              <7> on input line 64.
  (./RC_Integrator.tex
 \alshift=\dimen271
 \absvshift=\dimen272
@@ -504,129 +504,167 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \realshift=\dimen276
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (../RC_Integrator.cir
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./RC_Differentiator.tex
+\alshift=\dimen277
+\absvshift=\dimen278
+\alshift=\dimen279
+\absvshift=\dimen280
+\realshift=\dimen281
+\realshift=\dimen282
+)
+(./RC_lowpass_Filter.tex
+\alshift=\dimen283
+\absvshift=\dimen284
+\alshift=\dimen285
+\realshift=\dimen286
+\realshift=\dimen287
+) (./RC_Highpass_Filter.tex
+\alshift=\dimen288
+\absvshift=\dimen289
+\alshift=\dimen290
+\realshift=\dimen291
+\realshift=\dimen292
+ [2])
+(./RC_Bandpass_Filter.tex
+\alshift=\dimen293
+\absvshift=\dimen294
+\alshift=\dimen295
+\realshift=\dimen296
+\realshift=\dimen297
+\realshift=\dimen298
+\realshift=\dimen299
+) (./RLC_Bandpass_Filter.tex
+\alshift=\dimen300
+\absvshift=\dimen301
+\alshift=\dimen302
+\realshift=\dimen303
+\realshift=\dimen304
+\realshift=\dimen305
+) [3]
+(../RC_Integrator.cir
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [2])
+))
 <./fig/RC_Integrator_1.png, id=22, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Integrator_1.png Graphic file (type png)
 <use ./fig/RC_Integrator_1.png>
-Package pdftex.def Info: ./fig/RC_Integrator_1.png  used on input line 92.
+Package pdftex.def Info: ./fig/RC_Integrator_1.png  used on input line 100.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
 <./fig/RC_Integrator_2.png, id=24, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Integrator_2.png Graphic file (type png)
 <use ./fig/RC_Integrator_2.png>
-Package pdftex.def Info: ./fig/RC_Integrator_2.png  used on input line 93.
+Package pdftex.def Info: ./fig/RC_Integrator_2.png  used on input line 101.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
 <./fig/RC_Integrator_3.png, id=25, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Integrator_3.png Graphic file (type png)
 <use ./fig/RC_Integrator_3.png>
-Package pdftex.def Info: ./fig/RC_Integrator_3.png  used on input line 94.
+Package pdftex.def Info: ./fig/RC_Integrator_3.png  used on input line 102.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
 <./fig/RC_Integrator_4.png, id=26, 462.528pt x 346.896pt>
 File: ./fig/RC_Integrator_4.png Graphic file (type png)
 <use ./fig/RC_Integrator_4.png>
-Package pdftex.def Info: ./fig/RC_Integrator_4.png  used on input line 95.
+Package pdftex.def Info: ./fig/RC_Integrator_4.png  used on input line 103.
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
 <./fig/RC_Integrator_5.png, id=27, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Integrator_5.png Graphic file (type png)
 <use ./fig/RC_Integrator_5.png>
-Package pdftex.def Info: ./fig/RC_Integrator_5.png  used on input line 96.
+Package pdftex.def Info: ./fig/RC_Integrator_5.png  used on input line 104.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
 <./fig/RC_Integrator_6.png, id=28, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Integrator_6.png Graphic file (type png)
 <use ./fig/RC_Integrator_6.png>
-Package pdftex.def Info: ./fig/RC_Integrator_6.png  used on input line 97.
+Package pdftex.def Info: ./fig/RC_Integrator_6.png  used on input line 105.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
- [3]
+ [4]
 Overfull \vbox (88.1763pt too high) has occurred while \output is active []
 
 
-[4 <./fig/RC_Integrator_1.png> <./fig/RC_Integrator_2.png>] [5 <./fig/RC_Integr
-ator_3.png>] [6 <./fig/RC_Integrator_4.png>] [7 <./fig/RC_Integrator_5.png>]
-(../RC_Differentiator.cir [8 <./fig/RC_Integrator_6.png>])
-<./fig/RC_Differentiator_1.png, id=54, 1387.584pt x 694.5147pt>
+[5 <./fig/RC_Integrator_1.png> <./fig/RC_Integrator_2.png>] [6 <./fig/RC_Integr
+ator_3.png>] [7 <./fig/RC_Integrator_4.png>] [8 <./fig/RC_Integrator_5.png>]
+(../RC_Differentiator.cir [9 <./fig/RC_Integrator_6.png>])
+<./fig/RC_Differentiator_1.png, id=57, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Differentiator_1.png Graphic file (type png)
 <use ./fig/RC_Differentiator_1.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_1.png  used on input line 103.
+Package pdftex.def Info: ./fig/RC_Differentiator_1.png  used on input line 111.
 
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
-<./fig/RC_Differentiator_2.png, id=55, 462.528pt x 346.896pt>
+<./fig/RC_Differentiator_2.png, id=58, 462.528pt x 346.896pt>
 File: ./fig/RC_Differentiator_2.png Graphic file (type png)
 <use ./fig/RC_Differentiator_2.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_2.png  used on input line 104.
+Package pdftex.def Info: ./fig/RC_Differentiator_2.png  used on input line 112.
 
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
-<./fig/RC_Differentiator_3.png, id=56, 1387.584pt x 694.5147pt>
+<./fig/RC_Differentiator_3.png, id=59, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Differentiator_3.png Graphic file (type png)
 <use ./fig/RC_Differentiator_3.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_3.png  used on input line 105.
+Package pdftex.def Info: ./fig/RC_Differentiator_3.png  used on input line 113.
 
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
-<./fig/RC_Differentiator_4.png, id=57, 462.528pt x 346.896pt>
+<./fig/RC_Differentiator_4.png, id=60, 462.528pt x 346.896pt>
 File: ./fig/RC_Differentiator_4.png Graphic file (type png)
 <use ./fig/RC_Differentiator_4.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_4.png  used on input line 106.
+Package pdftex.def Info: ./fig/RC_Differentiator_4.png  used on input line 114.
 
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
-<./fig/RC_Differentiator_5.png, id=58, 1387.584pt x 694.5147pt>
+<./fig/RC_Differentiator_5.png, id=61, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Differentiator_5.png Graphic file (type png)
 <use ./fig/RC_Differentiator_5.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_5.png  used on input line 107.
+Package pdftex.def Info: ./fig/RC_Differentiator_5.png  used on input line 115.
 
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
-<./fig/RC_Differentiator_6.png, id=59, 1387.584pt x 694.5147pt>
+<./fig/RC_Differentiator_6.png, id=62, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Differentiator_6.png Graphic file (type png)
 <use ./fig/RC_Differentiator_6.png>
-Package pdftex.def Info: ./fig/RC_Differentiator_6.png  used on input line 108.
+Package pdftex.def Info: ./fig/RC_Differentiator_6.png  used on input line 116.
 
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
- [9]
+ [10]
 Overfull \vbox (241.45972pt too high) has occurred while \output is active []
 
 
-[10 <./fig/RC_Differentiator_1.png> <./fig/RC_Differentiator_2.png>] [11 <./fig
-/RC_Differentiator_3.png>] [12 <./fig/RC_Differentiator_4.png>] [13 <./fig/RC_D
-ifferentiator_5.png>] (../RC_Lowpass_Filter.cir [14 <./fig/RC_Differentiator_6.
+[11 <./fig/RC_Differentiator_1.png> <./fig/RC_Differentiator_2.png>] [12 <./fig
+/RC_Differentiator_3.png>] [13 <./fig/RC_Differentiator_4.png>] [14 <./fig/RC_D
+ifferentiator_5.png>] (../RC_Lowpass_Filter.cir [15 <./fig/RC_Differentiator_6.
 png>])
-<./fig/RC_Lowpass_Filter.png, id=85, 462.528pt x 346.896pt>
+<./fig/RC_Lowpass_Filter.png, id=88, 462.528pt x 346.896pt>
 File: ./fig/RC_Lowpass_Filter.png Graphic file (type png)
 <use ./fig/RC_Lowpass_Filter.png>
-Package pdftex.def Info: ./fig/RC_Lowpass_Filter.png  used on input line 114.
+Package pdftex.def Info: ./fig/RC_Lowpass_Filter.png  used on input line 122.
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
- [15] (../RC_Highpass_Filter.cir [16 <./fig/RC_Lowpass_Filter.png>])
-<./fig/RC_Highpass_Filter.png, id=93, 462.528pt x 346.896pt>
+ [16] (../RC_Highpass_Filter.cir [17 <./fig/RC_Lowpass_Filter.png>])
+<./fig/RC_Highpass_Filter.png, id=96, 462.528pt x 346.896pt>
 File: ./fig/RC_Highpass_Filter.png Graphic file (type png)
 <use ./fig/RC_Highpass_Filter.png>
-Package pdftex.def Info: ./fig/RC_Highpass_Filter.png  used on input line 120.
+Package pdftex.def Info: ./fig/RC_Highpass_Filter.png  used on input line 128.
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
 
-[17] (../RC_Bandpass_Filter.cir [18 <./fig/RC_Highpass_Filter.png>])
-<./fig/RC_Bandpass_Filter.png, id=101, 1387.584pt x 694.5147pt>
+[18] (../RC_Bandpass_Filter.cir [19 <./fig/RC_Highpass_Filter.png>])
+<./fig/RC_Bandpass_Filter.png, id=105, 1387.584pt x 694.5147pt>
 File: ./fig/RC_Bandpass_Filter.png Graphic file (type png)
 <use ./fig/RC_Bandpass_Filter.png>
-Package pdftex.def Info: ./fig/RC_Bandpass_Filter.png  used on input line 126.
+Package pdftex.def Info: ./fig/RC_Bandpass_Filter.png  used on input line 134.
 (pdftex.def)             Requested size: 614.295pt x 307.46315pt.
- [19]
-(../RLC_Bandpass_Filter.cir [20 <./fig/RC_Bandpass_Filter.png>])
-<./fig/RLC_Bandpass_FiIter.png, id=110, 462.528pt x 346.896pt>
+ [20]
+(../RLC_Bandpass_Filter.cir [21 <./fig/RC_Bandpass_Filter.png>])
+<./fig/RLC_Bandpass_FiIter.png, id=113, 462.528pt x 346.896pt>
 File: ./fig/RLC_Bandpass_FiIter.png Graphic file (type png)
 <use ./fig/RLC_Bandpass_FiIter.png>
-Package pdftex.def Info: ./fig/RLC_Bandpass_FiIter.png  used on input line 132.
+Package pdftex.def Info: ./fig/RLC_Bandpass_FiIter.png  used on input line 140.
 
 (pdftex.def)             Requested size: 614.295pt x 460.74657pt.
- [21] [22 <./fig/RLC_Bandpass_FiIter.png>] [23] (./main.aux) ) 
+ [22] [23 <./fig/RLC_Bandpass_FiIter.png>] [24] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 24738 strings out of 481239
- 609871 string characters out of 5920378
- 1020000 words of memory out of 5000000
- 39707 multiletter control sequences out of 15000+600000
+ 25618 strings out of 481239
+ 632466 string characters out of 5920378
+ 1040185 words of memory out of 5000000
+ 40576 multiletter control sequences out of 15000+600000
  538477 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,71p,407b,1767s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,71p,407b,1732s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf
 /fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1
@@ -638,10 +676,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1000.pfb>
-Output written on main.pdf (23 pages, 1886041 bytes).
+Output written on main.pdf (24 pages, 1892200 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,26 @@
+Bridge-Rectifier circuit
+.include 1N4007.txt
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+d2 0 1 DI_1N4007
+d4 0 2 DI_1N4007
+d1 1 3 DI_1N4007
+d3 2 3 DI_1N4007
+r1 3 0
+
+vin 1 2 sin(0 21.21320 50 0 0)
+
+*analysis command
+.tran 0.01m 10
+
+.control 
+run
+
+*display cmd
+plot v(3) v(1,2)
+*end control mode
+.endc 
+
+*end netlist
+.end

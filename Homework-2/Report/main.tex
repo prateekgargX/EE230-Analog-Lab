@@ -51,8 +51,8 @@
 
 
 % Title[Enter title of the experiment here]
-\title{EE230: Homework-1\\
-Familiarization with NGSPICE Circuit Simulator and Lab Equipment}
+\title{EE230: Homework-2\\
+Unregulated DC Power Supply}
 
 % Author[Enter details of author here]
 \author{Prateek Garg, 20D070060}
@@ -66,17 +66,12 @@ Familiarization with NGSPICE Circuit Simulator and Lab Equipment}
 \section{Overview of the experiment} %[This segment creates Section as seen in document]
 
 \subsection{Aim of the experiment}%[This segment creates sebsections under the same section]
+\begin{enumerate}
+	\item Understanding the problems associated with increasing the capacitor value in an unregulated powersupply so as to reduce the ripple.
+  \item Understanding the limits of performance of a Zener regulator
+  \item Understanding a BJT based series voltage regulator to appreciate the basic blocks of an IC voltage regulator.
+\end{enumerate}
 
-Ngspice is a mixed-signal circuit Simulator. This experiment aims to implement some basic circuits namely :
-\begin{itemize}
-	\item RC Integrator
-	\item RC Differentiator
-	\item RC Lowpass Filter
-	\item RC Highpass Filter
-	\item RC Bandpass Filter
-	\item RLC Bandpass Filter
-\end{itemize}
-in Ngspice and plot their characteristics.
 
 \subsection{Methods}
 
@@ -84,12 +79,8 @@ We start by creating a netlist for each circuit, simulating on Ngspice and expor
 \section{Design}
 %Add circuit Diagrams here
 %With accompaying Explanantions 
-\input{RC_Integrator.tex}
-\input{RC_Differentiator.tex}
-\input{RC_lowpass_Filter.tex}
-\input{RC_Highpass_Filter.tex}
-\input{RC_Bandpass_Filter.tex}
-\input{RLC_Bandpass_Filter.tex}
+%\input{RC_Integrator.tex}
+%\input{RC_Differentiator.tex}
 
 \section{Simulation results}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  16 JAN 2022 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.6)  23 JAN 2022 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,7 +660,7 @@ Package pdftex.def Info: ./fig/RLC_Bandpass_FiIter.png  used on input line 140.
 Here is how much of TeX's memory you used:
  25646 strings out of 481239
  632673 string characters out of 5920378
- 1040306 words of memory out of 5000000
+ 1040305 words of memory out of 5000000
  40604 multiletter control sequences out of 15000+600000
  538477 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -678,7 +678,7 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sftt1000.pfb>
-Output written on main.pdf (26 pages, 1916574 bytes).
+Output written on main.pdf (26 pages, 1916572 bytes).
 PDF statistics:
  173 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

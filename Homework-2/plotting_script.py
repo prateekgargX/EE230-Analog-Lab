@@ -3,12 +3,12 @@ import numpy as np
 import math
 
 #_______________________________________________________________________________________________________________
-filename     = "4_columns"              #filename : This is name of the file containing the x and y values
-Plot_Title   =  "This is a plot title"
-x_axis_label = "x_axis_label"
-y_axis_label = "y_axis_label"
-number_of_curves_in_plot = 3
-legend_list = ["a","b","c"]
+filename     = "current_D3"              #filename : This is name of the file containing the x and y values
+Plot_Title   = "Current through Bridge Rectifier Diode D3 with Capacitor"
+x_axis_label = "Time(s)"
+y_axis_label = "Current(A)"
+number_of_curves_in_plot = 1
+legend_list = ["I"]
 LOG_OF_X = False                         #LOG_OF_X : x axis will be logarithmic if LOG_OF_X is 'True'
 is_first_order_derivative = False
 #_______________________________________________________________________________________________________________

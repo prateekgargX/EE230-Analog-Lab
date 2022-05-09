@@ -1,0 +1,29 @@
+Op-amp 741 based circuit-4
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include zener_B.txt
+
+.SUBCKT ZENER_12 1 2
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 3.58
+.MODEL DF D ( IS=27.5p RS=0.620 N=1.10 CJO=78.3p VJ=1.00 M=0.330
++ TT=50.1n)
+.MODEL DR D ( IS=5.49f RS=50 N=1.77 )
+.ENDS
+
+*Connections as mentioned in subcircuit file
+x1 0 2 3 4 5 UA741
+c1 2 5 47n
+r1 2 5 1.5Meg
+r2 2 6 18k
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+vin 6 0 pulse(-5 5 0 0 0 0.5m 1m)
+.tran 0.001m 110m 100m 
+.control
+run
+plot v(5) v(6) 
+*print v(5) v(6)
+.endc
+.end

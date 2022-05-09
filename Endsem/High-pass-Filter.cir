@@ -1,0 +1,20 @@
+High-Pass Filter using op-amp TL084
+*Including the predefined op-amp subcircuit file
+.include TL084.txt
+*Connections as mentioned in subcircuit file
+X1 1 2 3 4 2 TL084
+L1 1 0 1
+R1 1 5 6283
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+vin 5 0 dc 0 ac 1 $ac analysis
+*analysis command
+.ac dec 10 1 1Meg 
+.control 
+run
+*display cmd
+plot vdb(2)
+*end control mode
+.endc 
+*end netlist
+.endc

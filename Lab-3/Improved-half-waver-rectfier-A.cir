@@ -1,0 +1,21 @@
+Improved-Half-Wave-Rectifier-A
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include Diode_1N914.txt
+*Connections as mentioned in subcircuit file
+x1 0 1 2 3 6 UA741
+d1 6 4 1N914
+d2 1 6 1N914
+r1 5 1 10k
+r2 4 1 10k
+rl 4 0 1k
+vcc 2 0 dc 15v
+vee 3 0 dc -15v
+vin 5 0 sin (0 5 1k 0 0)
+.tran 0.02ms 6ms
+.control
+run
+plot v(4) v(6) v(5)
+print v(4) v(6) v(5) 
+.endc
+.end

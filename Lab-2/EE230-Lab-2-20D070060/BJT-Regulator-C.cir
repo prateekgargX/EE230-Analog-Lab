@@ -1,0 +1,37 @@
+BJT Regulator Circuit
+
+.include zener_B.txt
+*Defining Models
+.model bc547a NPN (IS=10f BF=200 ISE=10.3f IKF=50m NE=1.3
++ BR=9.5 VAF=80 IKR=12m ISC=47p NC=2 VAR=10 RB=280 RE=1 RC=40
++ tr=0.3u tf=0.5n cje=12p vje=0.48 mje=0.5 cjc=6p vjc=0.7 mjc=0.33 kf=2f)
+
+.model SL100 NPN (IS=100f BF=80 ISE=10.3f IKF=50m NE=1.3
++ BR=9.5 VAF=80 IKR=12m ISC=47p NC=2 VAR=10 RB=100 RE=1 RC=10
++ tr=0.3u tf=0.5n cje=12p vje=0.48 mje=0.5 cjc=6p vjc=0.7 mjc=0.33 kf=2f)
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+Vin 1 0 dc 20
+RC 1 3 1K
+Q1 1 3 2 SL100
+Q2 3 4 5 bc547a
+xz 0 5 DI_1N4734A  
+R1 2 4 11.3K
+R2 0 4 13.7k
+RL 2 0 1k
+
+*analysis commandx
+.dc Vin 15 25 0.5
+
+.control 
+run
+
+*display cmd
+plot v(2) 
+plot v(3) v(4) v(5)
+*end control mode
+.endc 
+
+*end netlist
+.end

@@ -1,0 +1,31 @@
+Thermistor Circuit
+.include ua741.txt
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+x 1 2 3 4 5 ua741
+r1 1 0 100k
+r2 1 6 2.5k
+r3 2 5 100k
+r4 2 7 2.5k
+rx1 7 8 300
+rx2 6 8 300
+rx3 7 0 300
+x2 6 0 temp_val thermistor 
+vp 3 0 15
+vn 4 0 -15
+v2 8 0 5
+*analysis command
+.tran 1m 1
+
+.control 
+run
+
+*display cmd
+plot v(7,6)
+
+*end control mode
+.endc 
+
+*end netlist
+.end

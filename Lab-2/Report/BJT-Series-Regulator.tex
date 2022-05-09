@@ -1,0 +1,14 @@
+\begin{center}
+    \begin{circuitikz}[american voltages]
+        \draw
+        (0,0) to [short, -o] (10,0)
+        (10,4) to [open, v>=$V_{out}$] (10,0) 
+        (0,4) to [open, v<=$V_{in}$] (0,0)  
+        (0,4) to [R, l= $470 \Omega $,i=$i_{s}$] (4,4)
+        to [short,*-o] (10,4)
+        (4,0) to [zzDo, l_=$Zener_{12V}$,i=-$i_{z}$,*-*] (4,4)
+        (7,4) to [R, l= $1K \Omega $,i=$i_{L}$,*-*] (7,0); 
+    \end{circuitikz}
+    
+    Zener Regulator
+\end{center}

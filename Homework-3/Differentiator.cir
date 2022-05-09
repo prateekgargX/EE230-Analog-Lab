@@ -1,0 +1,19 @@
+Inverting-Amplifier using op-amp 741
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+*Connections as mentioned in subcircuit file
+x1 0 1 2 3 4 UA741
+c1 5 1 0.01u
+r2 4 1 10k
+c2 4 1 0.001u
+vcc 2 0 dc 15v
+vee 3 0 dc -15v
+*Giving a sinusoidal input
+*vin 5 0 sin (0 0.1 1k 0 0)
+vin 5 0 pulse(-2 2 0 0.2m 0.2m 1p 0.4m)
+*vin 5 0 pulse(-2 2 0 0.2m 0.2m 1n 0.4m)
+.tran 0.02ms 5ms
+.control
+run
+plot v(5) v(4)
+.endc

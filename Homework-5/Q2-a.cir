@@ -1,0 +1,25 @@
+Thermistor Circuit -a
+
+.include Thermistor.txt
+.include ua741.txt
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+X1 1 2 temp_terminal thermistor Ro = 5K alpha = -3548
+*X1 1 2 temp_terminal thermistor Ro = 5K alpha = 3548  
+vin 1 2 dc 5 ac 0
+v_temp temp_terminal 0 5v
+*analysis command
+.dc v_temp -60 150 0.1
+
+.control 
+run
+
+*display cmd
+plot v(1,2)/i(vin)
+
+*end control mode
+.endc 
+
+*end netlist
+.end

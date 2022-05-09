@@ -1,0 +1,21 @@
+Inverting-Amplifier using op-amp 741
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+*Connections as mentioned in subcircuit file
+x1 5 1 2 3 4 UA741
+r1 0 1 1k
+r2 4 1 10k
+vcc 2 0 dc 15v
+vee 3 0 dc -15v
+*Giving a sinusoidal input
+vin 5 0 dc 0 ac 1
+*svin 5 0 sin (0 2 1k 0 0)
+.ac dec 10 10 10Meg
+.control
+run
+alter r2 100k
+*plot vdb(4)-vdb(5)
+run
+plot 20*log10(abs(ac1.v(4)))-20*log10(abs(ac1.v(5))) 20*log10(abs(ac.v(4)))-20*log10(abs(ac.v(5)))
+*plot vdb(4)-vdb(5)
+.endc

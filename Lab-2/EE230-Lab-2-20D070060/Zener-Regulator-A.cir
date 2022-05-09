@@ -1,0 +1,38 @@
+Zener Regulator Circuit
+
+*Defining zener Subckt
+.MODEL DF D ( IS=27.5p RS=0.620 N=1.10 CJO=78.3p VJ=1.00 M=0.330 TT=50.1n)  
+.MODEL DR D ( IS=5.49f RS=50 N=1.77 )  
+.SUBCKT ZENER_12 1 2  
+D1 1 2 DF  
+DZ 3 1 DR  
+VZ 2 3 10.8  
+.ENDS  
+
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+Vin 1 0 dc 20
+
+Vrs 2 3 dc 0
+Rs  1 2 470 
+
+x3 4 3 ZENER_12
+Viz 4 0 dc 0
+
+RL 3 5 1k
+Vil 5 0 dc 0
+
+*analysis commandx
+
+.op
+
+.control 
+run
+
+*display cmd
+print v(3) i(Vrs) i(Vil) i(Viz)
+*end control mode
+.endc 
+
+*end netlist
+.end

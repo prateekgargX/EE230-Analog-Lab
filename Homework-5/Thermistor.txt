@@ -1,0 +1,20 @@
+**************** wheatstone bridge ******************
+
+
+*** thermistor subcircuit *****************
+.subckt thermistor 1 2 temp_val Ro = 1K alpha = 3548 
+
+** value of thermistor resistance, R = Ro*exp(alpha*(1/T - 1/To))
+** Ro = Thermistor resistance at ambient temperature (25 deg in our case)
+** alpha = material constant
+** if alpha is +ve value then NTC else PTC
+** temp_val is the temperature value used to calculate thermistor resistance
+
+R 1 2 {Ro*exp(alpha*(1/( v(temp_val)+273 ) - 1/(25 + 273)))}
+
+.ends
+
+
+*** instantiated thermistor 
+***X1 2 3 temp_terminal thermistor Ro = 5K alpha = -3548  
+

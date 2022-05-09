@@ -1,0 +1,26 @@
+Wein-Bridge-Oscillator using op-amp TL084
+*Including the predefined op-amp subcircuit file
+.include TL084.txt
+*Connections as mentioned in subcircuit file
+X1 1 2 3 4 5 TL084
+R1 2 0 30
+R2 2 5 60
+R3 5 6 159.154
+R4 1 0 159.154 
+*150
+C1 6 1 0.1u
+C2 1 0 0.1u
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+*vin 5 0 dc 0 ac 1 $ac analysis
+*analysis command
+*.ac dec 10 1 1Meg 
+.tran 0.001m 0.01 3.5m
+.control 
+run
+*display cmd
+plot v(5)
+*end control mode
+.endc 
+*end netlist
+.endc

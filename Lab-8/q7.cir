@@ -1,0 +1,40 @@
+Logarithmic Amplifier
+
+.include 1N4148_1.txt
+.include TL084.TXT
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+
+Vin 11 0 dc 0
+x1 11 15 3 4 15 TL084
+*-------------------------------------
+R6 15 22 1455.60
+D1 22 25 1N4148
+x2 0 22 3 4 25 TL084
+*-------------------------------------
+R1 25 32 100 
+R12 35 32 100
+x3 31 32 3 4 35 TL084
+Voff 31 0 -0.293
+*-------------------------------------
+R2 42 0 100 
+R3 42 45 1892
+x4 35 42 3 4 45 TL084
+*-------------------------------------
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+
+.dc Vin 0 10 0.1
+*analysis command
+
+.control 
+run
+
+*display cmd
+plot  v(45) v(11)
+print  v(45) v(11)
+*end control mode
+.endc 
+
+*end netlist
+.end

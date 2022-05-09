@@ -1,0 +1,27 @@
+Q2 d
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include zener_1N4732A.txt
+.include Diode_1N914.txt
+.include lm324.txt
+*Connections as mentioned in subcircuit file
+x1 8 2 3 4 5 LM324
+vcc 3 0 dc 5v
+vee 4 0 dc -5v
+R1 1 0 1.425
+R2 1 6 1.01
+RG 2 7 2.156K
+RF 2 5 33.99K
+vref 6 0 dc 1
+vin 7 0 dc 0
+vos 8 1 2m
+*.dc vin 350m 700m 0.01m
+.dc vin 0 2  0.01
+.control
+run
+plot v(5)
+*print dc2.v(7) 
+*print dc1.v(7)
+.endc
+.end
+

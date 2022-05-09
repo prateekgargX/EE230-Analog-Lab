@@ -1,0 +1,30 @@
+Astable Multivibrator without diodes 
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include zener_B.txt
+
+.SUBCKT ZENER_12 1 2
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 3.48
+.MODEL DF D ( IS=27.5p RS=0.620 N=1.10 CJO=78.3p VJ=1.00 M=0.330
++ TT=50.1n)
+.MODEL DR D ( IS=5.49f RS=50 N=1.77 )
+.ENDS
+
+*Connections as mentioned in subcircuit file
+x1 1 2 3 4 5 UA741
+R1 1 0 30K
+R2 1 5 35K 
+R4 5 2 50K
+C1 2 0 0.01u
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+
+.tran 0.01m 25m
+.control
+run
+plot v(2) v(5)
+*print v(5) v(2)
+.endc
+.end

@@ -1,0 +1,33 @@
+Wheatstone on Opamp circuit
+.include ua741.txt
+.include Thermistor.txt
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+x1 1 2 3 4 5 ua741
+r1 1 0 10k
+r2 1 6 2k
+r3 2 5 10k
+r4 2 7 2k
+rx1 7 8 300
+rx2 6 8 300
+rx3 7 0 300
+x2 6 0 temp_terminal thermistor Ro = 300 alpha = 3548
+*x2 6 0 temp_terminal thermistor Ro = 300 alpha = 3548
+vp 3 0 15v
+vn 4 0 -15v
+v2 8 0 5v
+v_temp temp_terminal 0 0
+*analysis command
+.dc v_temp 20 30 0.1
+
+.control 
+run
+
+*display cmd
+plot v(7,6)
+plot v(5)
+*end control mode
+.endc 
+
+*end netlist
+.end

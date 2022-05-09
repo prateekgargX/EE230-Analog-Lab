@@ -1,0 +1,41 @@
+Opamp based Instrumentation amplifier
+
+.include ua741.txt
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+x1 1 2 3 4 5 ua741
+x2 21 22 23 24 25 ua741
+x3 31 32 33 34 35 ua741
+
+R1 2 35 10K
+R2 2 5 10K
+R3 1 25 10K
+R4 1 6 10K
+R5 25 22 10K
+R6 35 32 10K
+R10 32 22 2.2K
+
+vp1 3 0 15v
+vn1 4 0 -15v
+vp2 23 0 15v
+vn2 24 0 -15v
+vp3 33 0 15v
+vn3 34 0 -15v
+
+vcm 7 0 DC 0 
+vi1 21 7 dc 0
+vi2 31 7 dc 0
+vref 6 0 0
+*analysis command
+.DC vcm -2 2 0.01
+
+.control 
+run
+
+*display cmd
+plot v(5) v(7)
+*end control mode
+.endc 
+
+*end netlist
+.end

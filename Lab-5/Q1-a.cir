@@ -1,0 +1,29 @@
+Photodiode application circuit using op-amp LM324
+
+.include lm324.txt
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+x1 1 2 3 4 5 LM324
+R1 2 5 1.4Meg
+C1 2 5 3.3p
+R2 1 3 13.7K
+R3 1 0 280
+C2 1 0 1u
+CJ 2 0 11p
+vp 3 0 5v
+vn 4 0 0v
+vref 1 0 0.1v
+I1 2 0 0
+*analysis command
+.dc I1 0 2.4u 0.1u
+
+.control 
+run
+
+*display cmd
+plot v(5)
+*end control mode
+.endc 
+
+*end netlist
+.end

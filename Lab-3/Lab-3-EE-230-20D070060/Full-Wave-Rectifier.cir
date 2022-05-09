@@ -1,0 +1,36 @@
+Improved-Half-Wave-Rectifier-A
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include Diode_1N914.txt
+*Connections as mentioned in subcircuit file
+
+.subckt Improved_Half_Wave_Rectifier_B In Out com
+x1 com 1 2 3 6 UA741
+d1 Out 6 1N914
+d2 6 1 1N914
+r1 IN 1 10k
+r2 Out 1 10k
+rl Out com 1k
+vcc 2 com dc 15v
+vee 3 com dc -15v
+.ends
+
+.subckt Inverting_summer In1 In2 Out com
+x1 com 1 2 3 Out UA741
+r1 IN1 1 10k
+r2 IN2 1 5k
+r3 1 Out 10k    
+vcc 2 com dc 15v
+vee 3 com dc -15v
+.ends
+
+xhw 1 2 0 Improved_Half_Wave_Rectifier_B
+xis 1 2 3 0 Inverting_summer
+vin 1 0 sin (0 5 1k 0 0)
+Rl 3 0 1k
+.tran 0.02ms 6ms
+.control
+run
+plot v(3) v(1)
+print v(1) v(3)
+.endc

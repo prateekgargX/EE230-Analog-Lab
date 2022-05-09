@@ -1,0 +1,29 @@
+Single-Pole-Active-High-Pass-Filter.cir
+
+.include ua741.txt
+*describe circuit
+* <element-name> <nodes> <value/nodel>
+*Single Pole RC Filter Stage
+Ca 1 6 0.1u
+Ra 1 0 4.7K
+*Invert Amp Stage
+x1 1 2 3 4 5 UA741
+r1 5 2 9.1k
+r2 0 2 1k
+vcc 3 0 dc 12v
+vee 4 0 dc -12v
+*Giving a sinusoidal input
+vin 6 0 dc 0 ac 1
+.ac dec 10 0.01u 10000
+*analysis command
+
+.control 
+run
+
+*display cmd
+Plot vdb(5)
+*end control mode
+.endc 
+
+*end netlist
+.end

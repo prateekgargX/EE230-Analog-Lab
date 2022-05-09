@@ -1,0 +1,44 @@
+Monostable Multivibrator
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+.include zener_B.txt
+
+.SUBCKT ZENER_12 1 2
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 3.48
+.MODEL DF D ( IS=27.5p RS=0.620 N=1.10 CJO=78.3p VJ=1.00 M=0.330
++ TT=50.1n)
+.MODEL DR D ( IS=5.49f RS=50 N=1.77 )
+.ENDS
+
+.SUBCKT button_sw 1 2 c
+S1 1 2 c 0 b_sw1
+* Initial value, pulsed value, delay time, rise time, fall time, pulse width *
+V1 c 0 pulse(0 10 0.10 0.0 0.0 100u)
+.model b_sw1 sw vt=1 vh=0.2 ron=1 roff=1000MEG
+.ENDS button_sw
+
+*Connections as mentioned in subcircuit file
+x1 1 2 3 4 5 UA741
+R1 1 0 10K
+R2 1 6 10K 
+R3 6 5 1K
+R4 2 8 10K
+C1 2 9 10u
+xz1 7 6 ZENER_12
+xz2 7 0 ZENER_12
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+vr 8 0 dc 15v
+vc 9 0 -15v
+
+xsw 2 9 10 button_sw
+
+.tran 0.01m 1000m
+.control
+run
+plot v(2) v(6) v(1) v(10)
+*print v(6) v(2)
+.endc
+.end

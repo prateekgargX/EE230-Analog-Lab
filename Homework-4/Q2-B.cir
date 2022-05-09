@@ -1,0 +1,23 @@
+Op-amp 741 based circuit-2
+*Including the predefined op-amp subcircuit file
+.include ua741.txt
+*Connections as mentioned in subcircuit file
+x1 1 2 3 4 5 UA741
+C1 0 1 1n
+Rx1 2 5 10K
+Rx2 2 6 10K 
+R1 1 6 1K
+vcc 3 0 dc 15v
+vee 4 0 dc -15v
+vin 6 0 dc 0 ac 0.5 
+.ac dec 10 1 10000Meg
+.control
+run
+*Magnitude dB plot for v(2) on log scale
+plot vdb(5)-vdb(6) 
+*sprint vdb(5)-vdb(6)
+*Phase degrees plot for v(2) on log scale
+plot {57.29*vp(5)} xlog
+*print {57.29*vp(5)}
+.endc
+.end
